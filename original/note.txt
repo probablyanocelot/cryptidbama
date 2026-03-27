@@ -1,1 +1,35 @@
-if it helps, you can move these non-next files into cryptidbama/ (root dir). idc
+if it helps, you can move these non-NextJS files into cryptidbama/ (root dir). 
+    (if you wish to take the basic webdev route) idc
+
+React and NextJS are pretty easy to learn, so you can also just move them 
+    into `app/somefolder/` and make them into a page for practice.
+
+NextJS has a file-based routing system, so any folder you make in `app/` 
+    with a `page.tsx` file will become a page on the website.
+
+NextJS also has a built-in CSS module system, so you can make a 
+    `styles.module.css` file in the same folder as your `page.tsx`
+    and import it to use the styles in that page.
+    (example in `cryptidbama-app/app/template/`)
+
+    for this assignment, I think this is the easiest 1:1 from basic webdev, 
+    but you can also make use of Tailwind (built-in with NextJS).
+
+Common element tags shouldn't be used here.
+    (e.g. <h1>, <p>, etc.)
+    Instead, make a div like : 
+    <div>Welcome to Cryptidbama</div>
+    
+    then give it a className attribute :
+    <div className={style.h1}>Welcome to Cryptidbama</div>
+
+    and style it to look like the element you want in `styles.module.css`.
+    (e.g. .h1 { font-size: 2em; margin-bottom: 0.5em; })
+
+To make use of Tailwind, just add css to the element's `className` attribute:
+    <div className="text-2xl mb-2">Welcome to Cryptidbama</div>
+
+    The naming convention for Tailwind is pretty intuitive, 
+    but differs a little from conventional CSS naming, 
+    and you can find the docs here:
+    https://tailwindcss.com/docs/utility-first

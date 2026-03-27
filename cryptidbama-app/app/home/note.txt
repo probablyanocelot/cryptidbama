@@ -1,0 +1,8 @@
+this dir will eventually replace page.tsx in the app root (cryptidbama-app/app/), 
+but for now it's here so you can look at the default app/page.tsx as an example. 
+to see this page, go to http://localhost:3000/home after running the dev server.
+(instructions in app/README.md)
+
+also, should you want to start a new page,
+just make a new folder in app/ and add a page.tsx file in it.
+the bare minimum can be found in `app/template/page.tsx`.
