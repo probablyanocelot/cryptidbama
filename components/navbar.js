@@ -1,11 +1,31 @@
 class Navbar extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {
-    this.shadowRoot.innerHTML = `
+    this.innerHTML = `
+    <style>
+      nav {
+        background: #222;
+        color: #fff;
+        padding: 10px;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1em;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
     <nav>
       <ul>
         <li><a href="./index.html">Home</a></li>
