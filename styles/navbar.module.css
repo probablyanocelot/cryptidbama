@@ -1,19 +1,19 @@
-nav {
+.navbar nav {
   background: #222;
   color: #fff;
   padding: 10px;
 }
-ul {
+.navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 1em;
 }
-a {
+.navbar a {
   color: #fff;
   text-decoration: none;
 }
-a:hover {
+.navbar a:hover {
   text-decoration: underline;
 }

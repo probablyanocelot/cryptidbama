@@ -5,7 +5,6 @@ class Navbar extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <style src="../styles/navbar.module.css" />
     <nav>
       <ul>
         <li><a href="./index.html">Home</a></li>
