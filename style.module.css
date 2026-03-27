@@ -1,3 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: grey;
+}
+
 h1 {
   font-size: 2em;
   margin-bottom: 0.5em;
