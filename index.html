@@ -6,15 +6,18 @@
 
     <link rel="stylesheet" href="./styles/index.module.css" />
     <link rel="stylesheet" href="./styles/navbar.module.css" />
+    <link rel="stylesheet" href="./styles/map.module.css" />
 
     <script src="./components/navbar.js" defer></script>
+    <script src="./components/map_rollover.js" defer></script>
 
     <title>Cryptidbama</title>
   </head>
   <body>
     <navbar-component class="navbar"></navbar-component>
-    <div class="image-container">
-      <image class="map" src="./not-the-original.png" />
+    <div class="imageWrapper">
+      <image class="imageMain" src="./not-the-original.png" />
+      <rollover-component class="map-rollover" />
     </div>
     <h1>Welcome to Cryptidbama</h1>
 

@@ -1,0 +1,65 @@
+.imageWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.imageMain {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hotspot {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.hotspot:hover,
+.hotspot:focus {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  box-shadow:
+    0 0 12px 10px rgba(255, 255, 255, 0.85),
+    0 0 0 2px rgba(255, 255, 255, 0.7);
+  transform: translate(-50%, -50%) scale(1.7);
+  outline: none;
+}
+
+.areaOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.05);
+  transition:
+    background 0.2s ease,
+    box-shadow 0.25s ease;
+}
+
+.areaOverlay:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px 8px rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+}
+
+.hotspotActive {
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  box-shadow:
+    0 0 16px 12px rgba(255, 255, 255, 0.9),
+    0 0 0 2px rgba(255, 255, 255, 0.7);
+  transform: translate(-50%, -50%) scale(1.7);
+}
