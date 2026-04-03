@@ -1,12 +1,15 @@
 .imageWrapper {
   position: relative;
   display: inline-block;
+  width: min(100%, 900px);
 }
 
 .imageMain {
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .hotspot {
@@ -47,6 +50,7 @@
   transition:
     background 0.2s ease,
     box-shadow 0.25s ease;
+  z-index: 2;
 }
 
 .areaOverlay:hover {
