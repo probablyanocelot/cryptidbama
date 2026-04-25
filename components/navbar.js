@@ -8,19 +8,18 @@ class Navbar extends HTMLElement {
     <nav>
       <ul>
         <li><a href="./index.html" class="active">HOME</a></li>
-        <li><a href="../pages/page2.html">PAGE 2</a></li>
+        <li><a href="../pages/cryptidfaq.html">What's A Cryptid?</a></li>
         
         <li class="dropdown">
-          <a href="../pages/page3.html">PAGE 3 ▾</a>
+          <a href="../pages/famouscryptids.html">Famous Cryptids ▾</a>
           <ul class="dropdown-menu">
-            <li><a href="../pages/page3-sub1.html">CRYPTID LIST</a></li>
-            <li><a href="../pages/page3-sub2.html">SIGHTINGS MAP</a></li>
-            <li><a href="../pages/page3-sub3.html">SUBMIT EVIDENCE</a></li>
+            <li><a href="../pages/ufo.html">UFO</a></li>
+            <li><a href="../pages/whitethang.html">White Thang</a></li>
+            <li><a href="../pages/leprechaun.html">Leprechaun</a></li>
           </ul>
         </li>
         
-        <li><a href="../pages/page4.html">PAGE 4</a></li>
-        <li><a href="../pages/page5.html">PAGE 5</a></li>
+        <li><a href="../pages/contact.html">Contact</a></li>
       </ul>
     </nav>`;
   }
