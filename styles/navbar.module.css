@@ -35,28 +35,20 @@
   position: relative; 
 }
 
- .navbar .dropdown-menu {
-  display: none;      
+.navbar .dropdown-menu {
+  display: none; 
   position: absolute;
-  top: 100%;         
+  top: 100%;
   left: 0;
   background-color: #2c2c2c;
   min-width: 200px;
-  flex-direction: column;  
-  z-index: 1000;      
+  flex-direction: column;
+  z-index: 1000;
+  margin: 0;  
+  padding: 0;
 }
+
  
 .navbar .dropdown:hover .dropdown-menu {
   display: flex;
-}
-
- .navbar .dropdown-menu a {
-  padding: 12px 20px;
-  border-bottom: 1px solid #3d3d3d;
-  font-size: 12px;
-  text-transform: none;  
-}
-
-.navbar .dropdown-menu a:hover {
-  background-color: #5cb85c;  
 }
