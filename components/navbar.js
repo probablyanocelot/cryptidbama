@@ -7,7 +7,7 @@ class Navbar extends HTMLElement {
     this.innerHTML = `
     <nav>
       <ul>
-        <li><a href="cryptidbama/styles/index.html" class="active">HOME</a></li>
+        <li><a href="cryptidbama/index.html" class="active">HOME</a></li>
         <li><a href="cryptidbama/pages/cryptidfaq.html">What's A Cryptid?</a></li>
         
         <li class="dropdown">
