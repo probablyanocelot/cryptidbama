@@ -1,19 +1,53 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: grey;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: grey;
 }
 
 h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  color: black;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: black;
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  gap: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+ 
+
+.main-banner {
+    background-color: #1a1a1a;  
+    padding: 60px 20px;
+    text-align: center;
+    margin: -20px -20px 20px -20px;  
+}
+
+.cryptid-title {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 4rem;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.cryptid-subtitle {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+ 
+@media (max-width: 768px) {
+    .cryptid-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
 }
