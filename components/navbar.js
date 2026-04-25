@@ -3,15 +3,17 @@ class Navbar extends HTMLElement {
     super();
   }
 
-<header class="main-banner">
+  
+  connectedCallback() {
+    this.innerHTML = `
+   
+    <header class="main-banner">
         <div class="banner-content">
             <h1 class="cryptid-title">ALABAMA CRYPTIDS</h1>
             <p class="cryptid-subtitle">Uncovering the Unseen in the Heart of Dixie</p>
         </div>
     </header>
-  
-  connectedCallback() {
-    this.innerHTML = `
+    
     <nav>
       <ul>
         <li><a href="/cryptidbama/index.html">HOME</a></li>
