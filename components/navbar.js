@@ -15,7 +15,7 @@ class Navbar extends HTMLElement {
           <ul class="dropdown-menu">
             <li><a href="../pages/ufo.html">UFO</a></li>
             <li><a href="../pages/whitethang.html">White Thang</a></li>
-            <li><a href="../pages/leprechaun.html">Leprechaun</a></li>
+            <li><a href="pages/leprechaun.html">Leprechaun</a></li>
           </ul>
         </li>
         
