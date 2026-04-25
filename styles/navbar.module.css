@@ -1,19 +1,56 @@
 .navbar nav {
-  background: #222;
-  color: #fff;
-  padding: 10px;
+  background: #333; 
+  padding: 0;      
+  font-family: sans-serif;
 }
+
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1em;
+  gap: 0; 
 }
+
 .navbar a {
   color: #fff;
   text-decoration: none;
+  display: block;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
 }
-.navbar a:hover {
-  text-decoration: underline;
+
+.navbar a:hover, .navbar .dropdown:hover > a {
+  background: #444; 
+}
+
+.navbar a.active {
+  background: #5cb85c !important; 
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none; 
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #333;
+  min-width: 160px;
+  flex-direction: column; 
+  z-index: 100;
+  border-top: 2px solid #5cb85c; 
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu a {
+  padding: 12px 15px;
+  border-bottom: 1px solid #444;
 }
