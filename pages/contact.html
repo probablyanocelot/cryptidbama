@@ -11,32 +11,25 @@
     <script src="../components/navbar.js" defer></script>
 </head>
 <body>
-    <navbar-component class="navbar"></navbar-component>
+    <navbar-component></navbar-component>
 
     <div class="contact-container">
         <h1>Contact US</h1>
-
         <form class="contact-form">
             <div class="form-row">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name">
             </div>
-
             <div class="form-row">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email">
             </div>
-
             <div class="form-row textarea-row">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5">Hi I met a leprechaun once. It took my money.</textarea>
+                <textarea id="message" rows="5">Hi I met a leprechaun once. It took my money.</textarea>
             </div>
-
-            <div class="submit-btn-wrapper">
-                <button type="submit" class="submit-btn">Submit</button>
-            </div>
+            <button type="submit" class="submit-btn">Submit</button>
         </form> 
     </div> 
-
 </body>
 </html>
