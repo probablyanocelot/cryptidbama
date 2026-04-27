@@ -44,6 +44,56 @@ h1 {
     font-style: italic;
 }
 
+.contact-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 3px solid #000;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: #000; /* Ensuring it's black like the sketch */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    width: 100px; 
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.cryptid-contact-form input[type="text"],
+.cryptid-contact-form input[type="email"],
+.cryptid-contact-form textarea {
+    flex: 1;
+    padding: 10px;
+    border: 3px solid #000;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.textarea-group {
+    align-items: flex-start;
+}
+
+.submit-btn {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    background-color: #fff;
+    border: 3px solid #000;
+    cursor: pointer;
+}
  
 @media (max-width: 768px) {
     .cryptid-title {
