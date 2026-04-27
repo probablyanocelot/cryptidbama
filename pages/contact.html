@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptidbama | Contact Us</title>
+    <link rel="stylesheet" href="../styles/index.module.css">
+    <link rel="stylesheet" href="../styles/navbar.module.css">
+    <script src="../components/navbar.js" defer></script>
+</head>
+<body>
+    <navbar-component class="navbar"></navbar-component>
+
+    <div class="contact-form-container">
+        <h1 class="contact-heading">Contact US</h1>
+
+        <form class="cryptid-contact-form" action="#" method="post">
+            
+            <div class="form-group">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="email" required>
+            </div>
+
+            <div class="form-group textarea-group">
+                <label for="user-message">Message</label>
+                <textarea id="user-message" name="message" rows="5" required>Hi I met a leprechaun once. It took my money.</textarea>
+            </div>
+
+            <div class="submit-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
