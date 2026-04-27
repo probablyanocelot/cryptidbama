@@ -1,74 +1,105 @@
-.navbar nav {
-  background: #2c2c2c; 
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+ 
+navbar-component {
+    display: block;
+    width: 100%;
 }
 
  
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  display: block;
-  padding: 15px 25px;  
-  font-weight: 700;
-  font-size: 14px;
-  transition: background 0.2s ease;
+.main-banner {
+    background-color: #1a1a1a; /* Dark background */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/forest-bg.jpg'); /* Optional background */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 4px solid #5cb85c; /* Cryptid Green accent */
 }
 
- .navbar a.active {
-  background-color: #5cb85c;  
+.cryptid-title {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #5cb85c;
 }
 
- 
-.navbar a:hover {
-  background-color: #444;
-}
-
- 
-.navbar > nav > ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar .dropdown {
-  position: relative; 
+.cryptid-subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.9;
 }
 
  
-.navbar .dropdown-menu {
-  display: none !important;  
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #2c2c2c;
-  min-width: 200px;
- 
-  flex-direction: column; 
-  z-index: 1000;
-  margin: 0;  
-  padding: 0;
-  list-style: none;
+nav {
+    background: #2c2c2c; 
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    border-bottom: 1px solid #444;
 }
 
- 
-.navbar .dropdown:hover > .dropdown-menu {
-  display: flex !important;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers your menu */
 }
 
- 
-.navbar .dropdown-menu li {
-  width: 100%;
+/* 4. Links */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;  
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
-.navbar .dropdown-menu a {
-  padding: 12px 20px;
-  border-bottom: 1px solid #3d3d3d;
+nav a:hover {
+    background-color: #444;
+    color: #5cb85c;
+}
+
+nav a.active {
+    background-color: #5cb85c;  
+}
+
+/* 5. Dropdown Logic */
+.dropdown {
+    position: relative; 
+}
+
+.dropdown-menu {
+    display: none; /* Removed !important to allow hover to work naturally */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2c2c2c;
+    min-width: 200px;
+    flex-direction: column; 
+    z-index: 1000;
+    margin: 0;  
+    padding: 0;
+    list-style: none;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    padding: 12px 20px;
+    border-bottom: 1px solid #3d3d3d;
+    font-weight: 400; /* Slightly thinner for dropdown items */
+}
+
+.dropdown-menu a:hover {
+    padding-left: 30px; /* Subtle slide effect */
 }
