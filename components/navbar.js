@@ -18,7 +18,7 @@ connectedCallback() {
         <li><a href="/cryptidbama/pages/index.html">HOME</a></li>
         <li><a href="/cryptidbama/pages/cryptidfaq.html">What's A Cryptid?</a></li>
         <li class="dropdown">
-          <a href="/cryptidbama/pages/famouscryptids.html">Famous Cryptids ▾</a>
+         <a href="#" class="dropdown-toggle">Famous Cryptids ▾</a>
           <ul class="dropdown-menu">
             <li><a href="/cryptidbama/pages/ufo.html">UFO</a></li>
             <li><a href="/cryptidbama/pages/whitethang.html">White Thang</a></li>
