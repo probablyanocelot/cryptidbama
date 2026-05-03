@@ -21,7 +21,7 @@ class MapRollover extends HTMLElement {
           style="clip-path: polygon(44.0% 58.7%, 42.9% 60.2%, 44.2% 62.1%, 42.1% 63.0%, 39.5% 64.9%, 37.1% 62.8%, 35.8% 59.3%, 36.6% 54.8%, 38.6% 50.1%, 42.5% 46.0%, 48.2% 40.8%, 51.4% 37.6%, 53.6% 31.9%, 57.1% 29.2%, 61.5% 27.6%, 68.2% 27.2%, 73.4% 30.0%, 78.2% 31.9%, 82.4% 34.5%, 86.3% 38.8%, 86.7% 43.2%, 87.2% 47.7%, 84.6% 52.2%, 79.1% 53.9%, 74.7% 50.7%, 75.6% 46.4%, 76.5% 54.1%, 77.1% 58.2%, 64.3% 62.8%, 57.5% 54.4%, 53.6% 52.6%, 50.1% 55.0%, 48.6% 56.9%)"
           aria-label="White Thang"
           title="White Thang"
-          onclick="window.location.href='/cryptidbama/pages/white-thang'"
+          onclick="window.location.href='/cryptidbama/pages/whitethang'"
         ></div>
 
         <div
