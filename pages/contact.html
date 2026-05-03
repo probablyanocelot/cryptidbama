@@ -15,21 +15,69 @@
 
     <div class="contact-container">
         <h1>Contact US</h1>
-        <form class="contact-form">
+   
+        <form class="contact-form" id="cryptid-form">
             <div class="form-row">
                 <label for="name">Name</label>
-                <input type="text" id="name">
+               
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-row">
                 <label for="email">Email</label>
-                <input type="email" id="email">
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-row textarea-row">
                 <label for="message">Message</label>
-                <textarea id="message" rows="5">Hi I met a leprechaun once. It took my money.</textarea>
+                <textarea id="message" name="message" rows="5" required>Hi I met a leprechaun once. It took my money.</textarea>
             </div>
-            <button type="submit" class="submit-btn">Submit</button>
+            <button type="submit" class="submit-btn" id="submit-btn">Submit</button>
         </form> 
+        <div id="response-message" style="margin-top: 20px; display: none;"></div>
     </div> 
+
+    <script>
+        const cryptidForm = document.getElementById('cryptid-form');
+        const responseMessage = document.getElementById('response-message');
+        const submitBtn = document.getElementById('submit-btn');
+
+        cryptidForm.addEventListener('submit', async (event) => {
+      
+            event.preventDefault();
+
+    
+            submitBtn.innerText = "Sending...";
+            submitBtn.disabled = true;
+
+    
+            const formData = new FormData(cryptidForm);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                    const response = await fetch('https://httpbin.org/post', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    responseMessage.innerText = "Sighting reported! We'll track down that leprechaun.";
+                    responseMessage.style.display = "block";
+                    responseMessage.style.color = "green";
+                    cryptidForm.reset(); // Clear the form
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            } catch (error) {
+                    responseMessage.innerText = "Oops! The cryptids blocked your message. Try again.";
+                responseMessage.style.display = "block";
+                responseMessage.style.color = "red";
+            } finally {
+                            submitBtn.innerText = "Submit";
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
 </body>
 </html>
